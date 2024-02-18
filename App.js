@@ -7,12 +7,12 @@ export default function App() {
   return (
     <ClerkProvider publishableKey='pk_test_b2JsaWdpbmctZ3VsbC00My5jbGVyay5hY2NvdW50cy5kZXYk'>
     <View style={styles.container}>
-      <SignedIn>
+     <SignedIn>
           <Text>You are Signed in</Text>
-        </SignedIn>
-        <SignedOut>
+     </SignedIn>
+    <SignedOut>
       <Login/>
-        </SignedOut>
+     </SignedOut>
       <StatusBar style="auto" />
     </View>
     </ClerkProvider>
