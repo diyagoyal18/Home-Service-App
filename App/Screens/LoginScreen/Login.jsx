@@ -1,12 +1,11 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
-import React from 'react'
+import * as React from 'react'
 import Colors from '../../Utils/Colors'
 import * as WebBrowser from "expo-web-browser";
 import { useWarmUpBrowser } from '../../hooks/useWarmUpBrowser';
 import { useOAuth } from "@clerk/clerk-expo";
-import * as Linking from 'expo-linking';
-
-Linking.openURL('https://expo.dev');
+import google from 'expo-auth-session/providers/google';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 WebBrowser.maybeCompleteAuthSession();
 

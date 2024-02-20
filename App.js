@@ -2,6 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Login from './App/Screens/LoginScreen/Login';
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo';
+import google from 'expo-auth-session/providers/google'
+import * as Linking from 'expo-linking';
+
+Linking.openURL('https://expo.dev');
 
 export default function App() {
   return (
